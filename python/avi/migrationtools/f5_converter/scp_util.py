@@ -19,7 +19,7 @@ def get_files_from_f5(local_path, host, username, pw=None, key=None):
     try:
         scp.get_all_files('/config/filestore/files_d/Common_d/certificate_d/',
                           local_path)
-        scp.get_all_files('/config/filestore/files_d/Common_d/key_d/',
+        scp.get_all_files('/config/filestore/files_d/Common_d/certificate_key_d/',
                           local_path)
     except:
         pass
